@@ -1,0 +1,370 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(41, 40, 40);
+    /*background-image: url(./imagenes.png/hadal\ planta.png);*/
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Averia Sans Libre', cursive;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+ display: column;
+ min-height: 70px;
+ background-color: rgb(218, 213, 204);
+ align-items: center;
+ padding: 10px;
+ font-family: 'Averia Sans Libre', cursive;
+    
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__logo img {
+    height: 100px;
+    
+}
+
+.nombre__empresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+.nombre__empresa:hover{
+    color: white;
+}
+
+
+
+.nav__header {
+    display: flex;
+    font-weight: 600;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__header a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    .nav__header{
+        padding: 10px 0px;
+    }
+}
+
+/*.fondo_gris{
+    background-color: rgba(117, 236, 117, 0.4);
+    border-radius: 20%;
+}*/
+
+.pie-pagina{
+    width: 100%;
+    bottom: 0;
+    background-color:rgb(241, 241, 240);
+
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+/*ICONO DE HADAL*/
+.pie-pagina .grupo1 .parte3 figure{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .parte3 figure img{
+    width: 100px;
+    padding-top: 20px;
+}
+/*.pie-pagina .grupo1 h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}*/
+
+/* INFO EN EL FOOTER*/
+.pie-pagina .grupo1 .parte2 ul{
+    height: 100%;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.pie-pagina .grupo1 .parte2 ul li{
+    padding-bottom: 10px;
+}
+
+/*DATOS DE HADAL*/
+.pie-pagina .grupo1 .parte1 ul{
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    
+}
+.pie-pagina .grupo1 .parte1 ul li{
+    padding-bottom: 30px;
+}
+/*MEDIOS DE PAGO */
+
+.pie-pagina .grupo1 .medios-pago a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+
+.pie-pagina .grupo1 .medios-pago a i{
+    font-size: 40px;
+}
+
+/*CODIGO QR */
+.pie-pagina .grupo1 .qrcode{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .qrcode img{
+    width:100px;
+}
+/*DERECHOS RESERVADOS*/
+.pie-pagina .derechos{
+    font-size: 15px;
+    padding: 15px 10px;
+    padding-left: 60%;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .derechos small{
+    font-size: 15px;
+}
+/*REDES SOCIALES*/
+.pie-pagina .grupo1 .redes-sociales a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo1 .redes-sociales a i{
+    font-size: 40px;
+}
+
+/*La Pagina de como llego empieza aca  */
+/*Todo lo que es el mapa y la info*/
+
+.contacto{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+.mapa-google{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px;
+}
+
+.mapa-google h3{
+    text-align: center;
+    font-size: 50px;
+}
+
+.mapa-google iframe{
+    width: 700px;
+    height: 600px;
+    padding-top: 50px;
+}
+.mapa-google a{
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color:white;
+    text-align: left;
+    line-height: 80px;
+    background-color: grey;
+}
+
+.mapa-google a i{
+    color:white;
+    margin-right: 60px;
+    margin-left: 30px;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+/*Parrafo de porque visitarnos*/
+
+.contenedor-bici{
+    width: 60%;
+    height: 100%;
+    padding-left: 20%;
+    padding-top: 30px;
+}
+
+.contenedor-bici p{
+    font-size: 30px;
+    color: white;
+}
+
+.contenedor-bici p b{
+    line-height: 60px;
+    color:white;
+}
+
+.contenedor-cleta{
+    display: grid;
+    grid-template-columns: 15% 75%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+
+.contenedor-cleta p{
+    font-size: 30px;
+    column-count: 2;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.contenedor-cleta i{
+    font-size:110px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color:white;
+}
+
+/*RECETAS*/
+
+.lasagna{
+    display: flex;
+}
+
+.lasagna p{
+    color: rgb(173, 177, 181);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(29, 35, 32, 0.4);
+    line-height: 25px;
+}
+
+.lasagna img{
+    padding: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+.recetas_hadal img{
+    width: 100%;
+    height: 500px;
+}
+
+.lentejas p{
+    color: rgb(173, 177, 181);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(29, 35, 32, 0.4);
+    line-height: 25px;
+}
+
+.lentejas{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lentejas img{
+    padding: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+.fondo-ensalada{
+    width: 100% ;
+    height:400px;
+    background-attachment: fixed;
+    background-image:url("./imagenes.png/ensalada\ hadal.png");
+}
+
+.pasta-brocoli{
+    display: flex;
+}
+
+.pasta-brocoli img{
+    padding: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+.pasta-brocoli p{
+    color: rgb(173, 177, 181);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(29, 35, 32, 0.4);
+    line-height: 25px;
+}
+
+.medialunas{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.medialunas img{
+    padding: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+.medialunas p{
+    color: rgb(173, 177, 181);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(29, 35, 32, 0.4);
+    line-height: 25px;
+}
+
+
+
+
+
+

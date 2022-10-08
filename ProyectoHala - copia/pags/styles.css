@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(246, 242, 242);
+    
+}
+/* ~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~ */
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+ display: column;
+ min-height: 70px;
+ background-color: rgb(218, 213, 204);
+ align-items: center;
+ padding: 10px;
+ font-family: 'Averia Sans Libre', cursive;
+    
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__logo img {
+    height: 100px;
+    
+}
+
+.nombre__empresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+.nombre__empresa:hover{
+    color: white;
+}
+
+
+
+.nav__header {
+    display: flex;
+    font-weight: 600;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__header a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    .nav__header{
+        padding: 10px 0px;
+    }
+}
+
+
+/*BODY BODY BODYBODY BODY BODYBODY BODY BODYBODY BODY BODY */
+body {
+    background-color: #191919;
+
+}
+.img_product {
+    box-sizing: border-box;
+
+    
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.wrap h1 {
+    color: rgb(194, 182, 166);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+    font-family: 'Faustina', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 2%;
+    
+}
+
+.wrap h1:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 20px 0;
+}
+
+.strore_wrapper{
+    display: flex;  
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+.category_list .category_item {
+    display: block;
+    width: 90%;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    background-color: bisque;
+}
+
+.category_list .ct_item-active{
+    background-color: rgb(128, 136, 34);
+}
+
+/*PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS PORDUCTOS */
+.product_list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+.product_list .product-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22) ;
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    transition: all .4s;
+}
+
+.product_list .product-item img {
+    width: 100%;
+}
+
+.product_list .product-item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: antiquewhite;
+
+    text-align: center;
+}
+
+
+
+/* FOOTER ================================================ FOOTER*/
+
+.pie-pagina{
+    width: 100%;
+    bottom: 0;
+    background-color:rgb(241, 241, 240);
+
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+/*ICONO DE HADAL*/
+.pie-pagina .grupo1 .parte3 figure{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .parte3 figure img{
+    width: 100px;
+    padding-top: 20px;
+}
+/*.pie-pagina .grupo1 h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}*/
+
+/* INFO EN EL FOOTER*/
+.pie-pagina .grupo1 .parte2 ul{
+    height: 100%;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.pie-pagina .grupo1 .parte2 ul li{
+    padding-bottom: 10px;
+}
+
+/*DATOS DE HADAL*/
+.pie-pagina .grupo1 .parte1 ul{
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    
+}
+.pie-pagina .grupo1 .parte1 ul li{
+    padding-bottom: 30px;
+}
+/*MEDIOS DE PAGO */
+
+.pie-pagina .grupo1 .medios-pago a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+
+.pie-pagina .grupo1 .medios-pago a i{
+    font-size: 40px;
+}
+
+/*CODIGO QR */
+.pie-pagina .grupo1 .qrcode{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .qrcode img{
+    width:100px;
+}
+/*DERECHOS RESERVADOS*/
+.pie-pagina .derechos{
+    font-size: 15px;
+    padding: 15px 10px;
+    padding-left: 60%;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .derechos small{
+    font-size: 15px;
+}
+/*REDES SOCIALES*/
+.pie-pagina .grupo1 .redes-sociales a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo1 .redes-sociales a i{
+    font-size: 40px;
+}

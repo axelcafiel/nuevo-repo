@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #191919;
+    
+}
+
+
+/* ~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~ */
+/* ~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~~~NAVEGADOR~~ */
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+ display: column;
+ background-image: url("./components/img/bannerIndex");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ align-items: center;
+ height: 600px;
+    
+}
+.nav__inicio{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.nav__logoInicio{
+    align-items: center;
+    
+        
+}
+
+.nav__logoInicio img {
+    height: 100px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+
+
+.nav__headerInicio {
+    font-size: 20px;
+    float: right;
+    display: flex;
+    margin: 55px 35px;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+.nav__headerInicio a{
+    color: white;
+}
+
+.nav__headerInicio a:hover{
+    color: rgb(169, 139, 139);
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    .nav__headerInicio{
+        padding: 10px 0px;
+    }
+}
+/* ~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~ */
+/* ~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~~~NAVEGADOR~~~~FINALIZA~~ */
+
+/* ~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~*/
+/* ~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~~CUERPO~*/
+
+.sector1{
+    width: 1300px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+
+}
+.sector1 h1 {
+    line-height: 60px;
+}
+
+
+.veganLogo {
+    width: 300px;
+    float: left;
+}
+
+.sinTaccLogo{
+    width: 250px;
+    float: right;
+}
+
+
+.content1 {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: 'Faustina', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    color: burlywood;
+    padding: 10%;
+}
+
+.subtitulo {
+    margin: 0;
+    color: white;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.sabor {
+    color: #ffff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+/* ----------------------------- */
+/* Estilos de Materialize */
+/* ----------------------------- */
+.carousel {
+    min-height: 500px;
+    
+  
+}
+
+
+
+.carousel .carousel-item {
+    display: flex;
+   background-color: bisque;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 10px;
+    background: #36221c;
+}
+
+/* ----------------------------- */
+/* Finaliza Estilos de Materialize */
+/* ----------------------------- */
+
+
+/* ~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~~SECCION 2 NOVEDADES Y PROMOCIONES~ */ 
+
+.nov__prom {
+    background-clip: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Faustina', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    color: burlywood;
+    padding-bottom: 25px;
+}
+
+/* DIV VACIO EN EL QUE CREAMOS LA IMAGEN DE FONDO*/
+
+.imagen__background{
+    margin-top: 100px;
+    background-image: url(./components/img/dibujoPersonal.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+
+/* Seguimos con la seccion 2 ================================= */
+.sector2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.item1 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+} 
+
+.item2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.item3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sector2 p {
+    font-family: 'Averia Sans Libre', cursive;
+    max-width: 50%;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    
+}
+
+.linea__divisora{
+    position: relative;
+    width: 65%;
+    border-color: rgb(98, 92, 92);
+    margin: 20px;
+}
+
+
+
+
+
+
+/* FOOTER ================================================ FOOTER*/
+
+.pie-pagina{
+    font-family: 'Averia Sans Libre', cursive;
+    width: 100%;
+    bottom: 0;
+    background-color:rgb(241, 241, 240);
+
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+/*ICONO DE HADAL*/
+.pie-pagina .grupo1 .parte3 figure{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .parte3 figure img{
+    width: 100px;
+    padding-top: 20px;
+}
+/*.pie-pagina .grupo1 h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}*/
+
+/* INFO EN EL FOOTER*/
+.pie-pagina .grupo1 .parte2 ul{
+    height: 100%;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.pie-pagina .grupo1 .parte2 ul li{
+    padding-bottom: 10px;
+}
+
+/*DATOS DE HADAL*/
+.pie-pagina .grupo1 .parte1 ul{
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    
+}
+.pie-pagina .grupo1 .parte1 ul li{
+    padding-bottom: 30px;
+}
+/*MEDIOS DE PAGO */
+
+.pie-pagina .grupo1 .medios-pago a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+
+.pie-pagina .grupo1 .medios-pago a i{
+    font-size: 40px;
+}
+
+/*CODIGO QR */
+.pie-pagina .grupo1 .qrcode{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .qrcode img{
+    width:100px;
+}
+/*DERECHOS RESERVADOS*/
+.pie-pagina .derechos{
+    font-size: 15px;
+    padding: 15px 10px;
+    padding-left: 60%;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .derechos small{
+    font-size: 15px;
+}
+/*REDES SOCIALES*/
+.pie-pagina .grupo1 .redes-sociales a{
+    display:inline-flex;
+    text-decoration: none;
+    padding-top: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo1 .redes-sociales a i{
+    font-size: 40px;
+}
